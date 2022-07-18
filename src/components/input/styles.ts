@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
-interface ICustomInputProps {
+type ICustomInputProps = {
   isErrored: boolean;
-}
+};
 
 export const CustomInput = styled.input<ICustomInputProps>`
   height: 1.5rem;

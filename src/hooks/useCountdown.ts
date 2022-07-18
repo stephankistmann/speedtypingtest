@@ -11,13 +11,11 @@ export const useCountdown = (start: boolean) => {
 
       return () => clearInterval(interval);
     }
-  }, [countdown, start]);
 
-  useEffect(() => {
     if (countdown <= 0) {
       setCountdown(60);
     }
-  }, [countdown]);
+  }, [countdown, start]);
 
   return countdown;
 };

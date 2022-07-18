@@ -110,7 +110,9 @@ export const Game = () => {
             <WordBankContainer>
               <Fade />
               {words.map((word, index) => (
-                <Word key={index}>{word}</Word>
+                <Word isFirstItem={index === 0} key={index}>
+                  {word}
+                </Word>
               ))}
             </WordBankContainer>
           </GameContainer>

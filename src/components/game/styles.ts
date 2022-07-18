@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -24,8 +24,17 @@ export const WordBankContainer = styled.div`
   overflow: hidden;
 `;
 
-export const Word = styled.span`
+type IWordProp = {
+  isFirstItem: boolean;
+};
+
+export const Word = styled.span<IWordProp>`
   margin-right: 0.5rem;
+  ${({ isFirstItem }) =>
+    isFirstItem &&
+    css`
+      font-weight: bold;
+    `}
 `;
 
 export const ButtonContainer = styled.div`
