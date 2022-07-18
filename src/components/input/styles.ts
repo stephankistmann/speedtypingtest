@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const CustomInput = styled.input`
+interface ICustomInputProps {
+  isErrored: boolean;
+}
+
+export const CustomInput = styled.input<ICustomInputProps>`
   height: 1.5rem;
   width: 7rem;
   margin-right: 0.5rem;
@@ -9,4 +13,9 @@ export const CustomInput = styled.input`
     outline: none;
   }
   font-weight: 600;
+  ${({ isErrored }) =>
+    isErrored &&
+    css`
+      color: var(--danger);
+    `}
 `;

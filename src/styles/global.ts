@@ -6,6 +6,8 @@ export const GlobalStyle = createGlobalStyle`
     --backgroundHeader: rgb(18, 18, 20);
     --primary: rgb(255, 255, 255);
     --purple: rgb(130, 87, 230);
+    --purpleHover: rgb(142, 103, 232);
+    --danger: rgb(232, 63, 91);
   }
 
   * {

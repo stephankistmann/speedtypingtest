@@ -27,3 +27,17 @@ export const WordBankContainer = styled.div`
 export const Word = styled.span`
   margin-right: 0.5rem;
 `;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const GameOverContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`;
