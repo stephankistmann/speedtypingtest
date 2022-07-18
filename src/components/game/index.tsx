@@ -9,6 +9,7 @@ import {
 import { wordBank } from "../../constants/wordBank";
 import { Fade } from "../fade";
 import { Input } from "../input";
+import { Score } from "../score";
 
 export const Game = () => {
   const [words, setWords] = useState(wordBank);
@@ -16,6 +17,7 @@ export const Game = () => {
   return (
     <Container>
       <Content>
+        <Score accuracy={50} cpm={300} wpm={80} timer={60} />
         <GameContainer>
           <Input />
           <WordBankContainer>

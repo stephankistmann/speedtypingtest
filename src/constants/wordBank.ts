@@ -130,4 +130,4 @@ export const wordBank = [
   "friend",
   "front",
   "fruit",
-];
+].sort(() => Math.random() - 0.5);
