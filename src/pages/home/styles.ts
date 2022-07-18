@@ -9,7 +9,7 @@ export const Container = styled.main`
   padding: 1rem;
 `;
 
-export const Content = styled.div`
+export const SummaryContainer = styled.div`
   display: flex;
   flex-direction: column;
 `;

@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
   :root {
     --background: rgba(18, 18, 20, 0.97);
+    --backgroundHeader: rgb(18, 18, 20);
     --primary: rgb(255, 255, 255);
     --purple: rgb(130, 87, 230);
   }
