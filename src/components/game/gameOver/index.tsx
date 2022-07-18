@@ -13,9 +13,9 @@ export const GameOver: React.FC<IGameOverProps> = ({ cpm, wpm, accuracy }) => {
       <Content>
         <Text>Your result was: </Text>
         <Text>CPM: </Text>
-        <TextBold>{cpm} </TextBold>
+        <TextBold>{cpm}, </TextBold>
         <Text>WPM: </Text>
-        <TextBold>{wpm} </TextBold>
+        <TextBold>{wpm}, </TextBold>
         <Text>Accuracy: </Text>
         <TextBold>{accuracy}%</TextBold>
       </Content>
