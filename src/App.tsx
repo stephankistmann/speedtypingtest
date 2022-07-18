@@ -1,9 +1,12 @@
 import { GlobalStyle } from "./styles/global";
+import { Home } from "./pages/home/index";
+import { Header } from "./components/header";
 
 export const App = () => {
   return (
     <>
-      <h1>Hello World</h1>
+      <Header />
+      <Home />
       <GlobalStyle />
     </>
   );
